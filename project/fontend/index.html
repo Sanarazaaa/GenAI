@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Summarizer</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>News Summarizer</h1>
+        <p>Your one-stop solution for summarizing news articles!</p>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Input Your News Criteria</h2>
+            <input type="text" id="keyword" placeholder="Enter a topic or keyword..." />
+            <select id="contentType">
+                <option value="LinkedIn post">LinkedIn post</option>
+                <option value="meme">Meme</option>
+                <option value="tweet">Tweet</option>
+            </select>
+            <select id="tone">
+                <option value="formal">Formal</option>
+                <option value="conversational">Conversational</option>
+                <option value="humorous">Humorous</option>
+            </select>
+            <button id="generateButton">Generate</button>
+        </section>
+
+        <section class="output-section">
+            <h2>Generated Content</h2>
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 News Summarizer. All rights reserved.</p>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Content Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Content Generator</h1>
+        <p>Your one-stop solution for generating engaging content!</p>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Input Your Criteria</h2>
+            <input type="text" id="userPrompt" placeholder="Enter your prompt here..." />
+            <select id="tone">
+                <option value="formal">Formal</option>
+                <option value="conversational">Conversational</option>
+                <option value="humorous">Humorous</option>
+            </select>
+            <select id="format">
+                <option value="LinkedIn post">LinkedIn Post</option>
+                <option value="meme">Meme</option>
+                <option value="video">Video</option>
+            </select>
+            <button id="generateButton">Generate</button>
+        </section>
+
+        <section class="output-section">
+            <h2>Generated Content</h2>
+            <div id="outputContainer">
+                <div class="tab" id="textTab">Text Output</div>
+                <div class="tab" id="imageTab">Image Output</div>
+                <div class="tab" id="videoTab">Video Output</div>
+                <div class="tab" id="memeTab">Meme Output</div>
+            </div>
+            <div id="outputDisplay" class="output-display"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Content Generator. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
